@@ -13,6 +13,7 @@
 const invariant = require('invariant');
 const warnOnce = require('../Utilities/warnOnce');
 
+
 // Export React, plus some native additions.
 module.exports = {
   // Components
@@ -57,6 +58,12 @@ module.exports = {
   },
   get FlatList() {
     return require('../Lists/FlatList');
+  },
+  get ListView() {
+    return require('deprecated-react-native-listview');
+  },
+  get WebView() {
+    return require('react-native-webview');
   },
   get Image() {
     return require('../Image/Image');
@@ -348,21 +355,23 @@ module.exports = {
   get ViewPropTypes() {
     return require('../DeprecatedPropTypes/DeprecatedViewPropTypes');
   },
+ 
 };
 
 if (__DEV__) {
   // $FlowFixMe This is intentional: Flow will error when attempting to access ListView.
-  Object.defineProperty(module.exports, 'ListView', {
-    configurable: true,
-    get() {
-      invariant(
-        false,
-        'ListView has been removed from React Native. ' +
-          'See https://fb.me/nolistview for more information or use ' +
-          '`deprecated-react-native-listview`.',
-      );
-    },
-  });
+  // Object.defineProperty(module.exports, 'ListView', {
+  //   configurable: true,
+  //   get test() {
+  //     // return require('');
+  //     // invariant(
+  //     //   false,
+  //     //   'ListView has been removed from React Native. ' +
+  //     //     'See https://fb.me/nolistview for more information or use ' +
+  //     //     '`deprecated-react-native-listview`.',
+  //     // );
+  //   },
+  // });
 
   // $FlowFixMe This is intentional: Flow will error when attempting to access SwipeableListView.
   Object.defineProperty(module.exports, 'SwipeableListView', {
@@ -378,17 +387,17 @@ if (__DEV__) {
   });
 
   // $FlowFixMe This is intentional: Flow will error when attempting to access WebView.
-  Object.defineProperty(module.exports, 'WebView', {
-    configurable: true,
-    get() {
-      invariant(
-        false,
-        'WebView has been removed from React Native. ' +
-          "It can now be installed and imported from 'react-native-webview' instead of 'react-native'. " +
-          'See https://github.com/react-native-community/react-native-webview',
-      );
-    },
-  });
+  // Object.defineProperty(module.exports, 'WebView', {
+  //   configurable: true,
+  //   get() {
+  //     invariant(
+  //       false,
+  //       'WebView has been removed from React Native. ' +
+  //         "It can now be installed and imported from 'react-native-webview' instead of 'react-native'. " +
+  //         'See https://github.com/react-native-community/react-native-webview',
+  //     );
+  //   },
+  // });
 
   // $FlowFixMe This is intentional: Flow will error when attempting to access NetInfo.
   Object.defineProperty(module.exports, 'NetInfo', {
