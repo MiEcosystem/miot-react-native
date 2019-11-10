@@ -213,7 +213,7 @@
   },
   "license": "MIT",
   "main": "Libraries/react-native/react-native-implementation.js",
-  "name": "@miot-plugin/react-native",
+  "name": "react-native",
   "peerDependencies": {
     "react": "16.9.0"
   },
