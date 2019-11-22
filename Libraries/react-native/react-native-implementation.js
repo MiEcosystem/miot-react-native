@@ -360,6 +360,10 @@ module.exports = {
   get NetInfo(){
     return require('@react-native-community/netinfo');
   },
+  // 添加 ViewPagerAndroid
+  get ViewPagerAndroid() {
+    return require('@react-native-community/viewpager');
+  }
  
 };
 
@@ -458,15 +462,15 @@ if (__DEV__) {
   });
 
   // $FlowFixMe This is intentional: Flow will error when attempting to access ViewPagerAndroid.
-  Object.defineProperty(module.exports, 'ViewPagerAndroid', {
-    configurable: true,
-    get() {
-      invariant(
-        false,
-        'ViewPagerAndroid has been removed from React Native. ' +
-          "It can now be installed and imported from 'react-native-viewpager' instead of 'react-native'. " +
-          'See https://github.com/react-native-community/react-native-viewpager',
-      );
-    },
-  });
+  // Object.defineProperty(module.exports, 'ViewPagerAndroid', {
+  //   configurable: true,
+  //   get() {
+  //     invariant(
+  //       false,
+  //       'ViewPagerAndroid has been removed from React Native. ' +
+  //         "It can now be installed and imported from 'react-native-viewpager' instead of 'react-native'. " +
+  //         'See https://github.com/react-native-community/react-native-viewpager',
+  //     );
+  //   },
+  // });
 }
