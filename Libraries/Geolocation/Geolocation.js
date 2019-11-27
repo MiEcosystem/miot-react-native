@@ -23,7 +23,7 @@ const warning = require('fbjs/lib/warning');
 
 const LocationEventEmitter = new NativeEventEmitter(RCTLocationObserver);
 
-const Platform = require('Platform');
+const Platform = require('../Utilities/Platform');
 const PermissionsAndroid = require('PermissionsAndroid');
 
 var subscriptions = [];
