@@ -12,7 +12,7 @@
 'use strict';
 
 const NativeEventEmitter = require('../EventEmitter/NativeEventEmitter');
-const RCTLocationObserver = require('../BatchedBridge/NativeModules').LocationObserver;
+const RCTLocationObserver = require('../BatchedBridge/NativeModules').RNCGeolocation;
 
 const invariant = require('fbjs/lib/invariant');
 const logError = require('../Utilities/logError');
