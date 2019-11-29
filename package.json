@@ -103,7 +103,7 @@
     "promise": "^7.1.1",
     "prop-types": "^15.7.2",
     "react-devtools-core": "^3.6.3",
-    "react-native-webview": "7.4.3",
+    "react-native-webview": "7.5.2",
     "react-refresh": "^0.4.0",
     "regenerator-runtime": "^0.13.2",
     "scheduler": "0.15.0",
