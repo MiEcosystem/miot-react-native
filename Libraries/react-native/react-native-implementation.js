@@ -356,9 +356,9 @@ module.exports = {
     return require('../DeprecatedPropTypes/DeprecatedViewPropTypes');
   },
 
-  // 找回 netinfo，修改 Android fetch 方法返回值
+  // 添加 react-native-community/react-native-netinfo，修改 Android fetch 方法返回值
   get NetInfo(){
-    return require('@react-native-community/netinfo');
+    return require('../Network/NetInfo');
   },
   // 添加 ViewPagerAndroid
   get ViewPagerAndroid() {
