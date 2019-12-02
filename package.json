@@ -77,7 +77,7 @@
   "bundleDependencies": false,
   "dependencies": {
     "@babel/runtime": "^7.0.0",
-    "@miot-plugin/event-target-shim": "^5.0.1",
+    "@miot-plugin/event-target-shim": "5.0.2",
     "@react-native-community/cli": "^3.0.0-alpha.1",
     "@react-native-community/cli-platform-android": "^3.0.0-alpha.1",
     "@react-native-community/cli-platform-ios": "^3.0.0-alpha.1",
