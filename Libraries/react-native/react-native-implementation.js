@@ -368,7 +368,11 @@ module.exports = {
   // 找回 BackAndroid
   get BackAndroid() {
     return require('../Utilities/BackAndroid');
-  }
+  },
+  //找回SwipeableFlatList
+  get SwipeableFlatList(){
+    return require('../Experimental/SwipeableRow/SwipeableFlatList');
+  },
  
 };
 
@@ -388,17 +392,17 @@ if (__DEV__) {
   // });
 
   // $FlowFixMe This is intentional: Flow will error when attempting to access SwipeableListView.
-  Object.defineProperty(module.exports, 'SwipeableListView', {
-    configurable: true,
-    get() {
-      invariant(
-        false,
-        'SwipeableListView has been removed from React Native. ' +
-          'See https://fb.me/nolistview for more information or use ' +
-          '`deprecated-react-native-swipeable-listview`.',
-      );
-    },
-  });
+  // Object.defineProperty(module.exports, 'SwipeableListView', {
+  //   configurable: true,
+  //   get() {
+  //     invariant(
+  //       false,
+  //       'SwipeableListView has been removed from React Native. ' +
+  //         'See https://fb.me/nolistview for more information or use ' +
+  //         '`deprecated-react-native-swipeable-listview`.',
+  //     );
+  //   },
+  // });
 
   // $FlowFixMe This is intentional: Flow will error when attempting to access WebView.
   // Object.defineProperty(module.exports, 'WebView', {
