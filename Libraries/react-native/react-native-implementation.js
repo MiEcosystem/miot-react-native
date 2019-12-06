@@ -373,6 +373,10 @@ module.exports = {
   get SwipeableFlatList(){
     return require('../Experimental/SwipeableRow/SwipeableFlatList');
   },
+  //找回alertIOS
+  get AlertIOS(){
+    return require('../../Libraries/Alert/AlertIOS')
+  }
  
 };
 
