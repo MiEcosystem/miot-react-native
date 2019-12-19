@@ -161,7 +161,7 @@ class AlertIOS {
       message: message || undefined,
       buttons,
       type: type || undefined,
-      _defaultValue,
+      defaultValue,
       cancelButtonKey,
       destructiveButtonKey,
       keyboardType,
